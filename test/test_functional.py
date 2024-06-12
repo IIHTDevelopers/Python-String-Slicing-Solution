@@ -24,7 +24,20 @@ class TestStringFunctions(unittest.TestCase):
             print("TestSlicing: Passed")
         except AssertionError as e:
             print("TestSlicing: Failed", e)
+     def test_reverse_string(self):
+        test_utils_instance = TestUtils()
 
+        # Test input and expected output
+        input_string = 'THEWORLDISMINE'
+        reversed_string = reverse_string(input_string)
+        expected_result = 'ENIMSIIDLOWEHT'
+
+        # Assertion using yakshaAssert
+        try:
+            test_utils_instance.yakshaAssert("TestReverseString", reversed_string == expected_result, "functional")
+            print("TestReverseString: Passed")
+        except AssertionError as e:
+            print("TestReverseString: Failed", e)
     def test_slice_deletion(self):
         test_utils_instance = TestUtils()
 
