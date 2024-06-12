@@ -1,5 +1,5 @@
-from TestResults import TestResults
-from TestCaseResultDto import TestCaseResultDto
+from test.TestResults import TestResults
+from test.TestCaseResultDto import TestCaseResultDto
 import json
 import requests
 
@@ -9,7 +9,7 @@ class TestUtils:
 
     @classmethod
     def yakshaAssert(self, test_name, result, test_type):
-        ref = open("custom.ih", "r")
+        ref = open("../custom.ih", "r")
         customData = ref.read()
         ref.close()
         test_case_results = dict()
