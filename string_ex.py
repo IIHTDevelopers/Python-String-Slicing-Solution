@@ -14,14 +14,6 @@ original_text = "Delete the word"
 new_text = slice_deletion(original_text, 6, 12)
 print(new_text)  # Output: "Deleteord"
 
-def reverse_string(input_string):
-    return input_string[::-1]
-
-# Example usage
-String = 'THEWORLDISMINE'
-reversed_string = reverse_string(String)
-print(reversed_string)
-
 def tokenize_sentence(sentence):
     # Split the sentence into words based on whitespace
     tokens = sentence.split()
@@ -99,4 +91,10 @@ replacement = ".pdf"
 manipulated_filenames = search_and_manipulate_filenames(filenames, substring, replacement)
 print("Manipulated Filenames:", manipulated_filenames)
 
+def reverse_string(input_string):
+    return input_string[::-1]
 
+# Example usage
+String = 'THEWORLDISMINE'
+reversed_string = reverse_string(String)
+print(reversed_string)
