@@ -13,14 +13,18 @@ class BoundaryTest(unittest.TestCase):
     def test_empty_string(self):
         my_string = ""
         self.test_obj.yakshaAssert(my_string[:3], "", "functional")
+        print("TestBoundary = Passed")
 
     def test_index_out_of_range(self):
         my_string = "Python"
         self.test_obj.yakshaAssert(my_string[20:], "", "functional")
+        print("TestBoundary = Passed")
+        
 
     def test_negative_index_out_of_range(self):
         my_string = "Python"
         self.test_obj.yakshaAssert(my_string[-20:], "Python", "functional")
+        print("TestBoundary = Passed")
 
 if __name__ == '__main__':
     unittest.main()
