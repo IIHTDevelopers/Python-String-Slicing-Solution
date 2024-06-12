@@ -24,7 +24,7 @@ class TestStringFunctions(unittest.TestCase):
             print("TestSlicing: Passed")
         except AssertionError as e:
             print("TestSlicing: Failed", e)
-     def test_reverse_string(self):
+    def test_reverse_string(self):
         test_utils_instance = TestUtils()
 
         # Test input and expected output
