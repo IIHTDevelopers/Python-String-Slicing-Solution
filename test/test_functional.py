@@ -1,8 +1,9 @@
 import unittest
+from string_ex import *
 from string_ex import slicing, slice_deletion, reverse_string, tokenize_sentence, \
     extract_long_words, transform_extensions_to_lowercase, slice_with_skip, extract_domain, \
     search_and_manipulate_filenames  # Import slicing directly
-from TestUtils import TestUtils
+from test.TestUtils import TestUtils
 
 class TestStringFunctions(unittest.TestCase):
     def test_slicing(self):
